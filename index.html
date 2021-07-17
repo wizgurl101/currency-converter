@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Converter</title>
+    <link href="currencyStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="currencyScript.js"></script>
+</head>
+
+<body>
+    <div class="mainLayout">
+        <header>
+            <div id="square"></div>
+            <div id="rotate">Currency</div>
+            <div id="line"></div>
+            <div id="line2">Converter</div>
+        </header>
+
+        <div class="content">
+            <div class="row">
+                <span>Currency on hand</span>
+                <select id="currency">
+                    <option>Euro</option>
+                    <option>US Dollar</option>
+                    <option>UK Pound Sterling</option>
+                    <option>Japanese Yen</option>
+                    <option>Canadian Dollar</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <span>Amount</span>
+                <input id="inputValue" type="number" min="0" />
+            </div>
+
+            <div class="row">
+                <span>Convert to</span>
+                <select id="availCurrency"></select>
+            </div>
+
+            <div class="row">
+                <span>Conversion Value</span>
+                <input id="resultField" />
+            </div>
+
+        </div>
+
+        <footer></footer>
+    </div>
+</body>
+
+</html>
